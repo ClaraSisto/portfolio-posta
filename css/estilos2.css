@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Unbounded:wght@200..900&display=swap');
+
+h1{
+    height: 50px;
+    color: orange;
+    font-size: 60px; 
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 80px;
+
+    animation-name: animaciontitulo;
+    animation-duration:12s ;
+    animation-delay: 4s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+}
+
+@keyframes animaciontitulo{
+    0% {color:orange;}
+    33%{color: rgb(222, 8, 101);}
+    67% {color:orange;}
+    100%{color: rgb(222, 8, 194);}
+}
+
+h2{
+    height: 50px;
+    color: rgb(237, 132, 195);
+    font-size: 30px; 
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+h3{
+    justify-content: center;
+    text-align: center;
+    font-weight: 300;
+    font-size: 18px;
+    margin-bottom: 50px;
+    color: rgb(226, 198, 231);
+}
+
+*{
+    box-sizing: border-box;
+    margin:0
+}
+
+header a{
+    text-decoration: none;
+    color: rgb(37, 3, 108);
+    background-color: orange;
+    padding: 5px 20px;
+    border-radius: 20px;
+    font-size: 17px;
+    font-weight: 400;
+    display: block;
+    text-align: center; 
+    width: 130px;
+    height: 35px;
+    margin: auto;
+
+    transition-property: transform, font-weight;
+    transition-duration: 1s;
+}
+
+header a:hover{
+    transform: scale(1.2);
+    font-weight: 500;
+}
+
+main{
+    width: 90%;
+    margin: 40px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+div{
+    width: 30%;
+    border-radius: 20px;
+
+    transition-property: transform,;
+    transition-duration: 1s;
+    transition-delay: 0s;
+}
+
+video{
+    margin: 40px auto;
+    display: flex;
+}
+
+img,video{
+    width:100% ;
+    border-radius: 30px;
+}
+
+div:hover{
+    transform: scale(1.04);
+}
+
+body{
+    background-image: linear-gradient(blue,orange);
+    font-family: "Poppins", sans-serif;
+}
+
